@@ -4,20 +4,20 @@
  */
 package es.pildoras.proyecto1.proyecto1.rest;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
  * @author julio
  */
-@RestController
+@Controller//cambiamos a Controller
 public class MiRestController {
     
-    @GetMapping("/")// El controlador Rest manejará las solicitudes desde esta ruta 
+    @GetMapping("/") 
     public String saludo(){
         
-        return "hola alumnos de Spring Boot";
+        return "index";
         
     }
     
